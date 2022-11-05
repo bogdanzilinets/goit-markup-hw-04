@@ -22,22 +22,22 @@ ul {
 /* header */
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
 }
 
 .logo-first {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  margin-right: 93px;
-  color: #000000;
-  text-decoration: none;
+font-family: "Raleway";
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: calc(31 / 26);
+letter-spacing: 0.03em;
+margin-right: 93px;
+color: #000000;
+text-decoration: none;
 }
 
 .container-header{
@@ -87,7 +87,8 @@ ul {
   color: #757575;
 }
 
-.mail-header:hover {
+.mail-header:hover,
+.mail-header:focus{
   color: #2196f3;
 }
 
@@ -103,7 +104,8 @@ ul {
   color: #757575;
 }
 
-.telephone-header:hover {
+.telephone-header:hover,
+.telephone-header:focus{
   color: #2196f3;
 }
 
@@ -113,6 +115,34 @@ ul {
   align-items: center;
   gap: 50px;
 }
+
+.enveloper {
+  cursor: pointer;
+  fill: #757575;
+}
+
+.enveloper:hover,
+.enveloper:focus {
+ fill: #2196f3;
+}
+
+.enveloper-smartphone-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.smartphone {
+  cursor: pointer;
+  fill: #757575;
+}
+
+.smartphone:hover,
+.smartphone:focus {
+  fill: #2196f3;
+}
+
 /* header */
 
 /* hero */
@@ -122,6 +152,9 @@ ul {
   padding-bottom: 200px;
   margin: 0 auto;
   background-color: #2f303a;
+  background-image: url(./img/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .flex-hero {
@@ -140,7 +173,6 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: #2f303a;
   color: #ffffff;
 }
 
@@ -253,6 +285,7 @@ ul {
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 /* Three pictures */
 
@@ -312,6 +345,7 @@ ul {
 .team-four {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: white;
 }
 
 .socials-list {
@@ -330,8 +364,7 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-top: 16px;
-  margin-bottom: 30px;
+
   background-color: #ffffff;
   color: #AFB1B8;
 }
@@ -351,21 +384,23 @@ ul {
 /* our-clients */
 
 .clients-list {
-  width: 1170px;
-  height: 184px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #ffffff;
 
 }
 
 .clients-name {
-  width: 297px;
-  height: 42px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42/36);
   text-align: center;
   letter-spacing: 0.03em;
-  
+  margin-bottom: 50px;
   color: #212121;
 }
 
@@ -373,7 +408,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-    background-color: #AFB1B8;
+  gap: 30px;
   list-style: none;
 }
 
@@ -381,16 +416,42 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #AFB1B8;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  cursor: pointer;
   width: 170px;
   height: 92px;
-
-  
 }
+
+.clients-icons:hover,
+.clients-icons:focus {
+  color: #2196F3;
+}
+
+.svg-icons {
+  fill: #AFB1B8;
+}
+
+.svg-icons:hover, 
+.svg-icons:focus{
+fill: currentColor;
+}
+
 /* footer */
 .futurum {
+  display: flex;
+  align-items: baseline;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-futurum {
+  display: flex;
+  align-items: baseline;
 }
 
 .geocontakts {
@@ -467,6 +528,39 @@ span {
 .geo:hover {
   color: #2196f3;
 }
+
+.footer-icons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.footer-title {
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.social-icon-footer {
+  fill: #ffffff;
+  
+}
+
+
+
+/* .social-link-footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 50%;
+  background-color: #AFB1B8;
+  color: #ffffff;
+} */
+
+
+
 /* footer */
 
 
@@ -562,6 +656,7 @@ border-bottom:1px solid #ECECEC
 .name-btn:hover,
 .name-btn:focus {
   background-color: #2196f3;
+  color: #ffffff;
 }
 
 .btn-five {
