@@ -83,12 +83,13 @@ text-decoration: none;
   line-height: calc(16 / 14);
   text-decoration: none;
   letter-spacing: 0.02em;
-
+  display: flex;
+  gap: 10px;
   color: #757575;
 }
 
 .mail-header:hover,
-.mail-header:focus{
+.mail-header:focus {
   color: #2196f3;
 }
 
@@ -117,13 +118,14 @@ text-decoration: none;
 }
 
 .enveloper {
+  display: flex;
   cursor: pointer;
   fill: #757575;
 }
 
 .enveloper:hover,
 .enveloper:focus {
- fill: #2196f3;
+fill: #2196f3;
 }
 
 .enveloper-smartphone-flex {
@@ -312,6 +314,7 @@ text-decoration: none;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   text-align: center;
+  margin-top: 30px;
   margin-bottom: 10px;
   color: #212121;
 }
@@ -322,6 +325,7 @@ text-decoration: none;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   text-align: center;
+  padding-bottom: 16px;
   color: #757575;
 }
 
@@ -343,9 +347,10 @@ text-decoration: none;
 }
 
 .team-four {
-  padding-top: 30px;
-  padding-bottom: 30px;
   background-color: white;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .socials-list {
@@ -353,8 +358,8 @@ text-decoration: none;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding-bottom: 30px;
   list-style: none;
-  
 }
 
 .social-link {
@@ -372,7 +377,7 @@ text-decoration: none;
 .social-link:hover, 
 .social-link:focus {
   background-color: #2196F3;
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 .social-icon {
@@ -417,6 +422,7 @@ text-decoration: none;
   justify-content: center;
   align-items: center;
   color: #AFB1B8;
+  border-radius: 4px;
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-left: 1px solid;
@@ -432,7 +438,7 @@ text-decoration: none;
 }
 
 .svg-icons {
-  fill: #AFB1B8;
+  fill: currentColor;
 }
 
 .svg-icons:hover, 
@@ -538,8 +544,17 @@ span {
 }
 
 .footer-title {
-  color: #ffffff;
-  padding-bottom: 20px;
+height: 16px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16/14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+margin-bottom: 20px;
 }
 
 .social-icon-footer {
@@ -547,20 +562,35 @@ span {
   
 }
 
-
-
-/* .social-link-footer {
+.socials-list-footer {
   display: flex;
-  text-align: center;
   justify-content: center;
+  align-items: center;
   gap: 10px;
+  padding-bottom: 30px;
+  list-style: none;
+}
+
+.social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background-color: #AFB1B8;
+  background-color: #ffffff 10%;
+  color: #fff;
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: #2196F3;
   color: #ffffff;
-} */
+}
 
-
-
+.social-icon-footer {
+  fill: currentColor;
+}
 /* footer */
 
 
@@ -572,14 +602,14 @@ border-bottom:1px solid #ECECEC
 }
 
 .menu-list-port {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #212121;
+font-family: "Roboto";
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: calc(16 / 14);
+letter-spacing: 0.02em;
+text-decoration: none;
+color: #212121;
 }
 
 .menu-list-port:hover,
@@ -588,14 +618,14 @@ border-bottom:1px solid #ECECEC
 }
 
 .mail-portfolio {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  text-decoration: none;
-  letter-spacing: 0.02em;
-  color: #757575;
+font-family: "Roboto";
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: calc(16 / 14);
+text-decoration: none;
+letter-spacing: 0.02em;
+color: #757575;
 }
 
 .mail-portfolio:hover {
@@ -711,5 +741,9 @@ border-bottom:1px solid #ECECEC
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.nine-shadow {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* main image */
