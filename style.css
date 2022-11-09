@@ -88,11 +88,6 @@ text-decoration: none;
   color: #757575;
 }
 
-.mail-header:hover,
-.mail-header:focus {
-  color: #2196f3;
-}
-
 .telephone-header {
 font-family: "Roboto";
 font-style: normal;
@@ -102,47 +97,70 @@ line-height: calc(16 / 14);
 text-decoration: none;
 letter-spacing: 0.02em;
 
+display: flex;
+margin-left: auto;
+align-items: center;
+gap: 10px;
 color: #757575;
-}
-
-.telephone-header:hover,
-.telephone-header:focus{
-  color: #2196f3;
 }
 
 .header-group {
   display: flex;
   margin-left: auto;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .enveloper {
   display: flex;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   fill: #757575;
+}
+
+.mail-header:hover {
+  color: #2196F3;
+}
+
+.mail-header:focus {
+  color: #2196F3;
+}
+
+.enveloper {
+  fill: currentColor;
 }
 
 .enveloper:hover,
 .enveloper:focus {
-fill: #2196f3;
+  fill: currentColor;
 }
 
-.enveloper-smartphone-flex {
+.smartphone {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-
-.smartphone {
   cursor: pointer;
   fill: #757575;
 }
 
+.telephone-header:hover {
+  color: #2196F3;
+}
+
+.telephone-header:focus {
+  color: #2196F3;
+}
+
+.smartphone {
+  fill: currentColor;
+}
+
 .smartphone:hover,
 .smartphone:focus {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 /* header */
@@ -153,16 +171,21 @@ fill: #2196f3;
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
-  background-color: #2f303a;
-  background-image: url(./img/hero.jpg);
+  
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./img/hero.jpg);
 }
+
 
 .flex-hero {
   display: flex;
   align-items: center;
   flex-direction: column;
+ 
 }
 
 .main-title {
@@ -176,6 +199,7 @@ fill: #2196f3;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  
 }
 
 .btn-first {
@@ -277,6 +301,32 @@ fill: #2196f3;
 .three-pictures-flex {
   display: flex;
   flex-direction: column;
+}
+
+.drawing {
+  position: relative;
+}
+
+.overlay {
+position: absolute;
+width: 370px;
+height: 70px;
+bottom: 0;
+padding-top: 27px;
+padding-bottom: 27px;
+background-color: rgba(47, 48, 58, 0.8);
+
+}
+
+.overlay-text {
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
 }
 
 .four-icons {
@@ -432,8 +482,11 @@ fill: #2196f3;
   height: 92px;
 }
 
-.clients-icons:hover,
-.clients-icons:focus {
+.clients-icons:hover{
+  color: #2196F3;
+}
+
+.clients-icons:focus{
   color: #2196F3;
 }
 
@@ -445,6 +498,8 @@ fill: #2196f3;
 .svg-icons:focus{
 fill: currentColor;
 }
+
+
 
 /* footer */
 .futurum {
@@ -552,6 +607,8 @@ font-size: 14px;
 line-height: calc(16/14);
 letter-spacing: 0.03em;
 text-transform: uppercase;
+display: flex;
+flex-direction: row;
 
 color: #FFFFFF;
 margin-bottom: 20px;
@@ -578,7 +635,7 @@ margin-bottom: 20px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff 10%;
+  background-color: #494a55;
   color: #fff;
 }
 
@@ -743,7 +800,7 @@ color: #757575;
   padding-right: 24px;
 }
 
-.nine-shadow {
+.nine-shadow:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* main image */
